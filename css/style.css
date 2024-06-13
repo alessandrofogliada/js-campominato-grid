@@ -17,10 +17,13 @@ body{
     flex-wrap: wrap;
 }
 
-.square{
-    width: calc(100% / 10);
-    height: 50px;
-    border: 2px solid white;
+.square {
+	width: calc(100% / 10);
+	height: 50px;
+	border: 2px solid white;
+	text-align: center;
+	padding-top: 14px;
+    color: #011627;
 }
 
 div#container .square.clicked {

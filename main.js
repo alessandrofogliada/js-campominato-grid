@@ -8,6 +8,7 @@
 
 const container = document.getElementById("container");
 
+
 // creare un ciclo che crea 100 div
 for (i = 0; i < 100; i++){
 
@@ -19,19 +20,24 @@ for (i = 0; i < 100; i++){
     // assegniamo una classe ai div 
 
     box.classList.add('square');
-    console.log(box);
+    // assegnare un numero ad ogni casella e far apparire il numero
+    console.log(i);
+    box.innerHTML = [i];
+ 
+    // console.log(box);
 
     container.append(box);
+
+    // dare l'input click dei div per cambiargli il colore
+
+    box.addEventListener('click' ,
+    function () {
+        box.classList.toggle('clicked');
+    }
+      
+    )
+
 }
 
- 
-
-
-
-// dare l'input click dei div per cambiargli il colore
-
-// associare al click l'aggiunta di una classe per fargli cambiare colore 
-
-// assegnare un numero ad ogni casella e far apparire il numero in console log 
 
 

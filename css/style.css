@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #011627;
+}
+
+#container {
+	width: 80%;
+	min-height: 300px;
+	border: solid white 2px;
+	margin: 60px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square{
+    width: calc(100% / 10);
+    height: 50px;
+    border: 2px solid white;
+}
+
+div#container .square.clicked {
+    background-color: aquamarine;
+}
